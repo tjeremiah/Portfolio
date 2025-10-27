@@ -1,0 +1,210 @@
+/* ========== GLOBAL STYLES ========== */
+
+* {
+  box-sizing:border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: #1a1a1a;
+  background-color: #f4f6f8;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* ========= NAVBAR ========== */
+.navbar{
+  background-color: #0078d4;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  padding: 1rem 0;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content:  space-between;
+  align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.nav-links a:hover {
+  border-bottom: 2px solid #00bfa6;
+}
+
+/* ========== HERO SECTION ========== */
+
+.hero {
+  background: linear-gradient(135deg, #0078d4, #00bfa6);
+  color: white;
+  text-align: center;
+  padding: 5rem 1rem;
+}
+
+.hero h2 span {
+  color: #ffffff;
+}
+
+.hero p {
+  margin: 1rem 0 2rem;
+  font-size: 1.2rem;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+/* ========== BUTTONS ========== */
+.btn {
+  padding: 0.75rem 1.5rem;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background-color: white;
+  color: #0078d4;
+}
+
+.btn-primary:hover {
+  background-color: #f4f4f4;
+
+}
+
+.btn-outline {
+  border: 2px solid white;
+  color: white;
+}
+
+.btn-outline:hover {
+  background-color: white;
+  color: #0078d4;
+}
+
+.btn-small {
+  font-size: 0.9rem;
+  padding: 0.5rem 1rem;
+}
+
+/* ========== ABOUT SECTION ========= */
+.section {
+  padding: 4rem 1rem;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0,0,0,0,2);
+}
+
+/*  ========== PROJECTS SECTION ========== */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, lfr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.project-card {
+  background-color: whit;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.project-links {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+
+/* ========== SKILLS SECTION =========*/
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.skills-grid span {
+  background-color: white;
+  padding: 0.6rem 1rem;
+  border-radius: 25px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  font-weight: 600;
+}
+
+/* ========== CONTACT SECTION ========== */
+.contact {
+  background-color: #0078d4;
+  color: white;
+  text-align:center;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.contact-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.contact-links a:hover {
+  color: #00bfa6;
+}
+
+/* ========== FOOTER ==========*/
+footer {
+  text-align: center;
+  background-color: #1a1a1a;
+  color: #ccc;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
